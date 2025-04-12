@@ -1,6 +1,7 @@
-import { TipTotals, Button } from "../App";
+import TipTotals from "./TipTotals";
+import Button from "./Button";
 
-export function SideBar({
+function SideBar({
   tipPerPerson,
   totalPerPerson,
   onSetBill,
@@ -26,3 +27,4 @@ export function SideBar({
     </div>
   );
 }
+export default SideBar;

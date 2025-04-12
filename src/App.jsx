@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Main } from "./components/Main";
-import { SideBar } from "./components/SideBar";
+import MainComponent from "../src/components/MainComponent";
+import SideBar from "../src/components/SideBar";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function Container() {
     (numPeople !== "" || !percentage) && totalAmount / numPeople;
   return (
     <div className="container">
-      <Main
+      <MainComponent
         bill={bill}
         onSetBill={setBill}
         tipByPercentage={tipByPercentage}

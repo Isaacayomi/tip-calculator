@@ -1,4 +1,4 @@
-export function TipTotals({ amountText, totalText, total }) {
+function TipTotals({ amountText, totalText, total }) {
   return (
     <div className="total-container">
       <p className="total-heading">
@@ -13,3 +13,4 @@ export function TipTotals({ amountText, totalText, total }) {
     </div>
   );
 }
+export default TipTotals;

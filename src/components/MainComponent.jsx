@@ -1,6 +1,5 @@
-import { Button } from "./App";
-
-export function Main({
+import Button from "./Button";
+function MainComponent({
   bill,
   onSetBill,
   tipByPercentage,
@@ -79,3 +78,4 @@ export function Main({
     </div>
   );
 }
+export default MainComponent;
