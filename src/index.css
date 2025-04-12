@@ -329,3 +329,27 @@ button.reset-btn:hover {
     padding-block: 0.5rem;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .buttons > * {
+    flex: 1 0 100%;
+  }
+
+  .tip-button {
+    width: 100%;
+    font-size: 0.8rem;
+    padding-block: 0.3rem;
+  }
+
+  .custom-input {
+    width: 100%;
+    font-size: 0.8rem;
+    padding-block: 0.3rem;
+  }
+}
