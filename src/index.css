@@ -249,4 +249,83 @@ button.reset-btn:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding-block: 2.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .logo img {
+    max-width: 3rem;
+  }
+
+  .bill-input,
+  .input-people {
+    width: 100%;
+    font-size: 1.2rem;
+    padding-block: 0.5rem;
+  }
+
+  .buttons {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .buttons > * {
+    flex: 1 0 45%;
+  }
+
+  .tip-button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding-block: 0.4rem;
+  }
+
+  .custom-input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding-block: 0.4rem;
+  }
+
+  .no-of-people p {
+    font-size: 0.8rem;
+  }
+
+  .total-container {
+    padding-block: 1.5rem;
+    padding-inline: 1rem;
+  }
+
+  .total-container:nth-child(1) {
+    margin-top: -2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .total-heading span:nth-child(1) {
+    font-size: 0.7rem;
+  }
+
+  .total-heading span:nth-child(2) {
+    font-size: 0.6rem;
+  }
+
+  .total-balance {
+    font-size: 1.2rem;
+  }
+
+  .reset-btn {
+    width: 90%;
+    font-size: 0.9rem;
+    padding-block: 0.5rem;
+  }
 }
