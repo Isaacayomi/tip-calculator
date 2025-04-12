@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function App() {
   return (
-    <div>
+    <div className="overall-container">
       <div className="logo">
         <img src="./images/logo.svg" alt="logo-img" />
       </div>
@@ -75,7 +75,9 @@ function Main({
         value={bill}
         onChange={(e) => {
           const value = e.target.value;
-          onSetBill(Number(isNaN(value) ? "" : value));
+          if (/^\d*\.?\d*$/.test(value)) {
+            onSetBill(value);
+          }
         }}
       />
       <p className="select-tip">Select Tip %</p>
@@ -100,8 +102,11 @@ function Main({
           value={inputTip}
           onChange={(e) => {
             const value = e.target.value;
-
-            onSetInputTip(Number(isNaN(value) ? "" : value));
+            if (value === "") {
+              onSetInputTip("");
+            } else if (/^\d*\.?\d*$/.test(value)) {
+              onSetInputTip(value);
+            }
             if (value !== "") onSetPercentage(null);
           }}
         />
