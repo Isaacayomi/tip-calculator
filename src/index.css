@@ -54,7 +54,7 @@ body {
 
 .bill-input,
 .input-people {
-  background-image: url("./images/icon-dollar.svg");
+  background-image: url("images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-size: 0.5rem;
   background-position: 5%;
@@ -148,7 +148,7 @@ input.custom-input::placeholder {
 }
 
 .input-people {
-  background-image: url("./images/icon-person.svg");
+  background-image: url("images/icon-person.svg");
   background-repeat: no-repeat;
   background-size: 0.6rem;
   background-position: 5%;
