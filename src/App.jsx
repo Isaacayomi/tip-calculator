@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Main } from "./Main.1";
+import { Main } from "./components/Main";
 import { SideBar } from "./components/SideBar";
 
 function App() {
