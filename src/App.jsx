@@ -114,9 +114,7 @@ function Main({
       <div className="no-of-people">
         <p>
           <span>Number of People</span>
-          {numPeople === 0 && (
-            <span className="error-msg">Cannot be a text</span>
-          )}
+          {numPeople === 0 && <span className="error-msg">Cannot be zero</span>}
         </p>
       </div>
       <input
