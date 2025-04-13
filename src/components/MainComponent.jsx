@@ -26,7 +26,7 @@ function MainComponent({
         onChange={(e) => {
           const value = e.target.value;
           if (/^\d*\.?\d*$/.test(value)) {
-            onSetBill(Number(value));
+            onSetBill(value);
           }
         }}
       />
