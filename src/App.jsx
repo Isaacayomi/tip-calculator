@@ -20,13 +20,18 @@ function Container() {
   const [percentage, setPercentage] = useState("");
   const [numPeople, setNumPeople] = useState("");
 
+  const numericBill = parseFloat(bill) || 0;
+
   const tipAmount =
-    inputTip === "" ? (bill * percentage) / 100 : (bill * inputTip) / 100;
-  const totalAmount = bill + tipAmount;
-  const tipPerPerson =
-    (numPeople !== "" || !percentage) && tipAmount / numPeople;
-  const totalPerPerson =
-    (numPeople !== "" || !percentage) && totalAmount / numPeople;
+    inputTip === ""
+      ? (numericBill * percentage) / 100
+      : (numericBill * inputTip) / 100;
+  const totalAmount = numericBill + tipAmount;
+  const tipPerPerson = numPeople ? tipAmount / numPeople : 0;
+  const totalPerPerson = numPeople ? totalAmount / numPeople : 0;
+
+  console.log("Tip Per Person:", tipPerPerson);
+  console.log("Total Per Person:", totalPerPerson);
   return (
     <div className="container">
       <MainComponent

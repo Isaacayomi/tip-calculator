@@ -1,4 +1,5 @@
 import Button from "./Button";
+
 function MainComponent({
   bill,
   onSetBill,
@@ -25,7 +26,7 @@ function MainComponent({
         onChange={(e) => {
           const value = e.target.value;
           if (/^\d*\.?\d*$/.test(value)) {
-            onSetBill(value);
+            onSetBill(Number(value));
           }
         }}
       />
@@ -54,7 +55,7 @@ function MainComponent({
             if (value === "") {
               onSetInputTip("");
             } else if (/^\d*\.?\d*$/.test(value)) {
-              onSetInputTip(value);
+              onSetInputTip(Number(value));
             }
             if (value !== "") onSetPercentage(null);
           }}
